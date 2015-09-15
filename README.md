@@ -13,6 +13,7 @@ Also, if the initialization script at the "textarea" will be any value, it will 
     
     <textarea class="neditor">The value of the field "textarea".</textarea>
 
-
+See [DEMO][]
+[DEMO]: http://n3sty.github.io/aosneditorE
 The editor distributed under licenses [(MIT)][]
 [(MIT)]: https://github.com/N3stY/NEDITOR/blob/master/LICENSE
