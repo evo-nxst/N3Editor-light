@@ -1,0 +1,65 @@
+.neditor {
+  text-align: left;
+  font-family: "Arial", sans-serif;
+  border: 1px solid #d2d6d7;
+}
+.neditor > .ne_toolbar {
+  border-bottom: 1px solid #d2d6d7;
+}
+.neditor > .ne_toolbar > ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+  height: 40px;
+  display: table;
+}
+.neditor > .ne_toolbar > ul > li {
+  display: inline-block;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  border-right: 1px solid #d2d6d7;
+  cursor: pointer;
+  position: relative;
+}
+.neditor > .ne_toolbar > ul > li svg {
+  width: 24px;
+  height: 24px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.neditor > textarea {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: calc(100% - 41px);
+  padding: 10px;
+  resize: none;
+}
+.nScriptList {
+  position: absolute;
+  background-color: #fff;
+  width: 250px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: -100px;
+  height: 200px;
+  overflow-y: scroll;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  display: none;
+}
+.nScriptListShow {
+  display: block;
+}
+.nScriptList > li > a {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  color: #333;
+  text-decoration: none;
+}
+.nScriptList > li > a:hover {
+  background: #E0E0E0;
+}
