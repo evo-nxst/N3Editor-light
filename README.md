@@ -8,7 +8,7 @@ To activate the "nEditor" the desired item "textarea" assign class "<b>.neditor<
 #####CUSTOMIZATION
 You can personalize the editor using attributes
     
-    <textarea name="__NAME__" class="neditor" data-width="__WIDTH__" data-height="__HEIGHT__" data-class="__CLASSES__"></textarea>
+    <textarea name="__NAME__" class="neditor" data-width="__WIDTH__" data-height="__HEIGHT__" data-class="__CLASSES__" data-id="__ID__"></textarea>
 Also, if the initialization script at the "textarea" will be any value, it will be transferred to the editor.
     
     <textarea class="neditor">The value of the field "textarea".</textarea>
