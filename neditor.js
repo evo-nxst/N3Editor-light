@@ -1,6 +1,6 @@
 $(document).ready(function ()
 {
-  var nVersion = '1.0';
+  var nVersion = '1.0.5';
   var mCalled = false;
   var mBlock = false;
   var googlePrettify;
