@@ -3,16 +3,18 @@ $(document).ready(function ()
   var nVersion = '1.0';
   var mCalled = false;
   var mBlock = false;
+  var googlePrettify;
 
   $(".neditor").each(function (i)
   {
-    var value = $(this).val();
+    var value = $(this).val().replace(/<br>/g,"\n");
     var y = $(this).attr("data-height") || '';
     var x = $(this).attr("data-width") || '';
     var classes = $(this).attr("data-class") || '';
     var name = $(this).attr("name") || '';
     var id = $(this).attr("id") || '';
     var area_id = $(this).attr("data-id") || '';
+    googlePrettify = $(this).attr("data-pretify") || false;
     var xy = '';
     if (y != '') xy = "height:" + y + ";";
     if (x != '') xy += "width:" + x + ";";
@@ -105,7 +107,19 @@ $(document).ready(function ()
     }
     else
     {
+      selectedText = selectedText.replace(/[<>\"\'\t\n]/g, function(m) { return {
+        '<' : '&lt;',
+        '>' : '&gt;',
+        "'" : '&#39;',
+        '"' : '&quot;',
+        '\t': '  ',
+        '\n': '<br/>'
+      }[m]});
       var replacement = '<pre lang="' + param + '">' + selectedText + "</pre>";
+      if(googlePrettify)
+      {
+        replacement = '<pre class="prettyprint lang-' + param + '">' + selectedText + "</pre>";
+      }
     }
     textArea.val(textArea.val().substring(0, start) + replacement + textArea.val().substring(end, len));
   }
