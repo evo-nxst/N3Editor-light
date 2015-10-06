@@ -15,5 +15,5 @@ Also, if the initialization script at the "textarea" will be any value, it will 
 
 See [DEMO][]
 [DEMO]: http://n3sty.github.io/aosneditor
-The editor distributed under licenses [(MIT)][]
+The editor distributed under [(MIT)][] license
 [(MIT)]: https://github.com/N3stY/NEDITOR/blob/master/LICENSE
