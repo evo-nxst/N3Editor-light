@@ -30,6 +30,6 @@ You can also use the standard textarea attributes such as: placeholder, id(for e
     </script>
 
 See [DEMO][]
-[DEMO]: http://n3sty.github.io/aosneditor
+[DEMO]: http://n3sty.github.io/neditor.html
 The editor distributed under [(MIT)][] license
 [(MIT)]: https://github.com/N3stY/NEDITOR/blob/master/LICENSE
