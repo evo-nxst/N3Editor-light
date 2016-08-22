@@ -1,6 +1,6 @@
 # TMEditor
 The aweasome simple jquery based editor<br><br>
-Get Started
+#####GET STARTED
   
     <script type="text/javascript">
      TMEditor.init({selector: '#editor'});
