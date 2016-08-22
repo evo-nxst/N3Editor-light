@@ -16,6 +16,6 @@ You can personalize the editor using script parameters</b>
        width: "700px"
       });
     </script>
-
-The editor distributed under [(MIT)][] license
-[(MIT)]: http://www.n3sty.com/mit.html
+    
+Try a [DEMO](http://demo.n3sty.com/preview/html/tmeditor-light)<br>
+The editor distributed under [MIT](http://www.n3sty.com/mit.html) license
