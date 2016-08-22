@@ -1,4 +1,4 @@
-# NEDITOR
+# TMEditor
 The aweasome simple jquery based editor<br>
 #####Init<br>
 To activate the "nEditor" use script "<b>script</b>"
@@ -30,6 +30,6 @@ You can also use the standard textarea attributes such as: placeholder, id(for e
     </script>
 
 See [DEMO][]
-[DEMO]: http://n3sty.github.io/neditor.html
+[DEMO]: -
 The editor distributed under [(MIT)][] license
-[(MIT)]: https://github.com/N3stY/NEDITOR/blob/master/LICENSE
+[(MIT)]: http://www.n3sty.com/mit.html
