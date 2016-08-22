@@ -1,7 +1,7 @@
 # TMEditor
 The aweasome simple jquery based editor<br>
 #####Init<br>
-To activate the editor use "<b>script</b>"
+To activate the editor use <b>script</b>
   
     <script type="text/javascript">
      TMEditor.init({selector: '#editor'});
@@ -9,6 +9,7 @@ To activate the editor use "<b>script</b>"
 
 #####CUSTOMIZATION
 You can personalize the editor using script parameters</b>
+
     <script type="text/javascript">
      TMEditor.init({
        selector: '#editor',
