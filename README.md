@@ -29,7 +29,6 @@ You can also use the standard textarea attributes such as: placeholder, id(for e
       editor.init();
     </script>
 
-See [DEMO][]
-[DEMO]: -
+
 The editor distributed under [(MIT)][] license
 [(MIT)]: http://www.n3sty.com/mit.html
