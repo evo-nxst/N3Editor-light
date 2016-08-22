@@ -1,0 +1,142 @@
+// out: tmeditor-light.min.css, sourcemap: false, compress: true
+@import "https://fonts.googleapis.com/css?family=Material+Icons|family=Roboto";
+@theme: #556d76;
+@primary: #fff;
+@secondary: #777b7c;
+.noselect() {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.transition(@w:all, @t:400ms, @e:ease) {
+  -webkit-transition: @w @t @e;
+  -moz-transition: @w @t @e;
+  -o-transition: @w @t @e;
+  transition: @w @t @e;
+}
+.shadow(@level: 1){
+  & when (@level = 1) {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  }
+  & when (@level = 2) {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+  & when (@level = 3) {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  & when (@level = 4) {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  & when (@level = 5) {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  }
+}
+.tmeditor {
+  background: #fff;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  icon {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+  .toolbar {
+    background: @theme;
+    color: @primary;
+    height: 68px;
+    padding: 19px;
+    position: relative;
+    box-sizing: border-box;
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    >div {
+      float: left;
+      &.set {
+        margin-right: 2%;
+      }
+      &.list {
+        position: relative;
+      }
+    }
+    icon {
+      float: left;
+      height: 30px;
+      width: 30px;
+      line-height: 32px;
+      text-align: center;
+      cursor: pointer;
+      margin-right: 5px;
+      font-size: 18pt;
+      .noselect();
+      .transition(background);
+      &.active, &:hover {
+        background: rgba(0, 0, 0, .07);
+      }
+    }
+    #codes_list {
+      height: 0px;
+      width: 0px;
+      overflow: hidden;
+      /*
+      height: 250px;
+      width: 200px;
+      */
+      position: absolute;
+      left: 0px;
+      top: 30px;
+      overflow-y: scroll;
+      background: #fff;
+      color: @secondary;
+      .shadow(3);
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        padding: 0 12;
+        line-height: 46px;
+        cursor: pointer;
+        &:hover {
+          background: darken(#fff, 10%);
+        }
+      }
+    }
+  }
+  .body {
+    padding: 12px;
+    height: calc(~"100% - 92px");
+    textarea {
+      padding: 12px;
+      resize: none;
+      width: 100%;
+      height: 100%;
+      border: none;
+      font-family: 'Roboto', sans-serif;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
