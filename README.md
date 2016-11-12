@@ -1,5 +1,7 @@
 # TMEditor <b>[light]</b>
-The aweasome simple jquery based editor<br><br>
+The aweasome simple jquery based editor
+Editor wysiwyg version is [here](https://github.com/N3stY/TMEditor)
+
 #####GET STARTED
   
     <script type="text/javascript">
@@ -20,7 +22,7 @@ You can personalize the editor using script parameters</b>
 <br>
 <b>You can create your own style</b> using as sample <b>[tmeditor-light.less](https://github.com/N3stY/TMEditor-light/blob/master/tmeditor-light.less)</b>
 <br>
-Want to help with the development? Contact me <b>contact&#64;n3sty.com</b>
+Want to help with the development? Contact me <b>yura&#64;n3sty.com</b>
 
-Try a [DEMO](http://demo.n3sty.com/preview/html/tmeditor-light)<br>
+Try a [DEMO](https://n3sty.github.io/tmeditor-light/)<br>
 The editor distributed under [MIT](http://www.n3sty.com/mit.html) license
