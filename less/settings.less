@@ -1,0 +1,131 @@
+@import 'https://fonts.googleapis.com/css?family=Material+Icons';
+@font-face {
+  font-family:fIcon;
+  src:url('../fonts/fIcon/fIcon.eot?dionr5');
+  src:url('../fonts/fIcon/fIcon.eot?dionr5#iefix') format('embedded-opentype'),
+  url('../fonts/fIcon/fIcon.ttf?dionr5') format('truetype'),
+  url('../fonts/fIcon/fIcon.woff?dionr5') format('woff'),
+  url('../fonts/fIcon/fIcon.svg?dionr5#fIcon') format('svg');
+  font-weight:400;
+  font-style:normal;
+}
+.shadow(@level: 1){
+  & when (@level = 1) {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  }
+  & when (@level = 2) {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+  & when (@level = 3) {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  & when (@level = 4) {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  & when (@level = 5) {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  }
+}
+.icon(@set: "icon") {
+  & when (@set = "icon") {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    vertical-align: middle;
+  }
+  & when (@set = "ficon") {
+    font-family: 'fIcon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    font-size: inherit;
+    line-height: 1;
+    letter-spacing: 0;
+    vertical-align: middle;
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    -ms-font-feature-settings: "liga" 1;
+    -o-font-feature-settings: "liga";
+    font-feature-settings: "liga";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+.noselect() {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.transition(@w:all, @t:400ms, @e:ease) {
+  -webkit-transition: @w @t @e;
+  -moz-transition: @w @t @e;
+  -o-transition: @w @t @e;
+  transition: @w @t @e;
+}
+@keyframes spin {
+  from {
+    transform:rotate(0deg);
+  }
+  to {
+    transform:rotate(360deg);
+  }
+}
+.rotate {
+  animation-name: spin;
+  animation-duration: 600ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  z-index: 100;
+}
+icon {
+  .icon();
+}
+ficon {
+  .icon("ficon");
+}
+.grayscale(@percent:100%) {
+  -webkit-filter: grayscale(@percent);
+  -moz-filter: grayscale(@percent);
+  -ms-filter: grayscale(@percent);
+  -o-filter: grayscale(@percent);
+  filter: grayscale(@percent);
+  filter: gray; /* IE 6-9 */
+}
+.scale(@sx:0, @sy:0) {
+  -moz-transform: scale(@sx, @sy);
+  -ms-transform: scale(@sx, @sy);
+  -webkit-transform: scale(@sx, @sy);
+  -o-transform: scale(@sx, @sy);
+  transform: scale(@sx, @sy);
+}
+.placehoder(@color:@theme) {
+  &::-webkit-input-placeholder {
+    color: @color;
+    font-weight: 700;
+  }
+  &::-moz-placeholder {
+    color: @color;
+    font-weight: 700;
+  }
+  &:-moz-placeholder {
+    color: @color;
+    font-weight: 700;
+  }
+  &:-ms-input-placeholder {
+    color: @color;
+    font-weight: 700;
+  }
+}

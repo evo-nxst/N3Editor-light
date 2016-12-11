@@ -1,0 +1,158 @@
+// out: ../assets/demo.min.css, sourcemap: false, compress: true
+@import "https://fonts.googleapis.com/css?family=family=Roboto|Righteous";
+@import "settings.less";
+@theme: #556d76;
+@text1: #212121;
+@text2: #777b7c;
+@border: #efefef;
+body {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+}
+.main-container {
+  width: 100%;
+  height: 100%;
+  display: table;
+  text-align: center;
+  position: relative;
+  &#get-started {
+    background: #fbfbfb;
+    .title {
+      margin: 0 auto;
+      max-width: 60%;
+      text-align: left;
+      font-size: 24px;
+      font-family: 'Righteous', cursive;
+      padding-bottom: 11.25px;
+    }
+    pre {
+      margin: 0 auto;
+      max-width: 60%;
+      border-radius: 4px;
+      text-align: left;
+      border: solid 1px @border;
+      overflow: hidden;
+      padding: 0 24px;
+      margin-bottom: 40px;
+    }
+  }
+  > div {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+  }
+  video {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+.page {
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+  > header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 6;
+    line-height: 60px;
+    text-align: right;
+    padding: 0 24px;
+    box-sizing: border-box;
+    .button {
+      height: 36px;
+      line-height: 36px;
+      color: #fff;
+      border: solid 1px @border;
+      display: inline-block;
+      text-align: center;
+      padding: 0 15px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 500;
+      margin-left: 10px;
+      border-radius: 4px;
+      .transition();
+      &:hover {
+        background: #fff;
+        color: @text1;
+      }
+      &.filled {
+        background: @theme;
+        color: #fff;
+        border-color: @theme;
+        &:hover {
+          background: lighten(@theme, 10%);
+          border-color: lighten(@theme, 10%);
+        }
+      }
+    }
+  }
+  .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+  }
+  video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+  }
+  .scroll-down {
+    font-family: 'Righteous', cursive;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 24px;
+    z-index: 5;
+    cursor: default;
+    text-transform: uppercase;
+    a {
+      color: inherit;
+    }
+    icon {
+      font-size: 38px;
+      cursor: pointer;
+      .transition();
+      &:hover {
+        color: @theme;
+      }
+    }
+  }
+}
+footer {
+  text-align: center;
+  padding: 11.25px 0;
+  font-size: 12px;
+  color: @text2;
+  font-weight: 700;
+  a {
+    font-family: 'Righteous', cursive;
+    color: inherit;
+    text-decoration: none;
+    .transition();
+    &:hover {
+      color: @theme;
+    }
+  }
+}

@@ -1,0 +1,201 @@
+// out: ../tmeditor-light.min.css, sourcemap: false, compress: true
+@import "https://fonts.googleapis.com/css?family=Material+Icons|family=Roboto";
+@import "settings.less";
+@theme: #556d76;
+@primary: #fff;
+@secondary: #777b7c;
+@border: #efefef;
+
+.tmeditor {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 4px;
+  text-align: left;
+  border: solid 1px @border;
+  > header {
+    height: 45px;
+    padding: 7.5px;
+    border-bottom: solid 1px @border;
+    box-sizing: border-box;
+    text-align: left;
+    background: #fff;
+    cursor: default;
+    .noselect();
+    .tm-icon {
+      border: solid 1px #aeacad;
+      float: left;
+      height: 30px;
+      width: 30px;
+      line-height: 28px;
+      font-size: 12px;
+      font-weight: 300;
+      text-align: center;
+      box-sizing: border-box;
+      border-radius: 4px;
+    }
+    .tm-title {
+      height: 30px;
+      line-height: 28px;
+      font-size: 16px;
+      font-weight: 400;
+      margin-left: 7px;
+      float: left;
+    }
+  }
+  [data-action="tm-dropdown"] {
+    &.open {
+      .tm-dropdown-container {
+        min-height: 100px;
+        height: auto;
+      }
+    }
+  }
+  .tm-toolbar {
+    background: #fbfbfb;
+    height: 45px;
+    border-bottom: solid 1px @border;
+    box-sizing: border-box;
+    &::after {
+      display: table;
+      content: " ";
+      clear: both;
+    }
+    > .tm-group {
+      height: 45px;
+      box-sizing: border-box;
+      padding: 0 7.5px;
+      border-right: solid 1px @border;
+      font-size: 14px;
+      line-height: 45px;
+      float: left;
+      position: relative;
+      &:last-child {
+        border-right: none;
+      }
+      > span {
+        margin-right: 5px;
+        font-weight: 900;
+      }
+      > a, > div:not(.tm-dropdown-container) {
+        cursor: pointer;
+        .noselect();
+        color: #000;
+        display: inline-block;
+        svg {
+          margin: 10.5px;
+        }
+        icon {
+          height: 45px;
+          line-height: 49px;
+          width: 45px;
+          text-align: center;
+          float: right;
+        }
+      }
+    }
+    > span {
+      width: 38px;
+      height: 38px;
+      display: inline-block;
+      float: left;
+      padding: 11.5px;
+      box-sizing: border-box;
+      .transition();
+      cursor: pointer;
+      &:hover {
+        background: rgba(0, 0, 0, .08);
+      }
+      svg {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+  .tm-editor {
+    background: #fff;
+    height: 300px;
+    position: relative;
+    z-index: 1;
+    padding: 24px 0;
+    > textarea {
+      width: 100%;
+      height: 100%;
+      border: none;
+      padding: 0 24px;
+      box-sizing: border-box;
+      cursor: text;
+      overflow-x: hidden;
+      overflow-y: auto;
+      outline: none;
+      resize: none;
+    }
+  }
+  .tm-dropdown-container {
+    position: absolute;
+    height: 0;
+    max-height: 290px;
+    background: #fff;
+    top: 45px;
+    left: 5px;
+    z-index: 100;
+    overflow: auto;
+    overflow-y: auto;
+    .shadow(1);
+    min-width: 110px;
+    > a {
+      display: block;
+      height: 45px;
+      line-height: 45px;
+      padding: 0 15px;
+      cursor: pointer;
+      border-bottom: solid 1px @border;
+      position: relative;
+      .transition();
+      &::before {
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        left: 4.5px;
+        top: 20px;
+        content: " ";
+        border-radius: 50%;
+      }
+      &.tm-selected::before {
+        background: #ffa8a8;
+      }
+      &:hover {
+        background: #2d2d2d;
+        color: #fff;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    &.open {
+      min-height: 100px;
+      height: auto;
+    }
+    .colors {
+      padding: 5px 5px 0 0;
+      width: 210px;
+      cursor: default;
+      &::after {
+        display: table;
+        content: " ";
+        clear: both;
+      }
+      > a {
+        width: 30px;
+        height: 30px;
+        display: block;
+        float: left;
+        margin: 0 0 5px 5px;
+        .transition();
+        cursor: pointer;
+        &:hover {
+          opacity: .5;
+        }
+      }
+    }
+  }
+}
