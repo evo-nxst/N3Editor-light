@@ -20,7 +20,7 @@ Editor wysiwyg version is [here](https://github.com/N3stY/TMEditor)
     </script>
     
 <br>
-<b>You can create your own style</b> using as sample <b>[tmeditor-light.less](https://github.com/N3stY/TMEditor-light/blob/master/less/tmeditor-light.less)</b> and <b>[default.template.coffee](https://github.com/N3stY/TMEditor-light/blob/master/coffee/default.template.coffee)</b>
+<b>You can create your own style</b> using as sample <b>[tmeditor-light.less](https://github.com/N3stY/TMEditor-light/blob/master/less/tmeditor-light.less)</b> and <b>[default.template.coffee](https://github.com/N3stY/TMEditor-light/blob/master/coffee/default.template.coffee)</b>/<b>[default.template.js](https://github.com/N3stY/TMEditor-light/blob/master/default.template.js)</b>
 <br>
 Want to help with the development? Contact me <b>yura&#64;n3sty.com</b>
 
