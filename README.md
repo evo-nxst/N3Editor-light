@@ -1,26 +1,26 @@
-# TMEditor <b>[light]</b>
+# TMEditor 2.0 <b>L</b>
 The aweasome simple jquery based editor
 Editor wysiwyg version is [here](https://github.com/N3stY/TMEditor)
 
 #####GET STARTED
   
-    <script type="text/javascript">
-     TMEditor.init({selector: '#editor'});
-    </script>
+    <!-- Load skin css -->
+    <link href="/path/to/tmeditor-light.min.css" rel="stylesheet" type="text/css">
 
-#####CUSTOMIZATION
-You can personalize the editor using script parameters</b>
+    <!-- Load main script -->
+    <script type="text/javascript" src="/path/to/tmeditor-light.js"></script>
+    <!-- Load skin script -->
+    <script type="text/javascript" src="/path/to/default.template.js"></script>
 
     <script type="text/javascript">
-     TMEditor.init({
-       selector: '#editor',
-       height: "350px",
-       width: "700px"
+      TMELight.init({
+        "selector": ".tmeditor-area", // Set selector
+        "skin": tm_default_template // Load skin if not default
       });
     </script>
     
 <br>
-<b>You can create your own style</b> using as sample <b>[tmeditor-light.less](https://github.com/N3stY/TMEditor-light/blob/master/tmeditor-light.less)</b>
+<b>You can create your own style</b> using as sample <b>[tmeditor-light.less](https://github.com/N3stY/TMEditor-light/blob/master/less/tmeditor-light.less)</b> and <b>[default.template.coffee](https://github.com/N3stY/TMEditor-light/blob/master/coffee/default.template.coffee)</b>
 <br>
 Want to help with the development? Contact me <b>yura&#64;n3sty.com</b>
 
