@@ -273,7 +273,10 @@ TMELight::init = (params) ->
 TMELight::setUI = ->
   skin = @params.skin || @Template
   skin = skin.replace(/{{tm-title}}/g, @title)
-  textarea = @textarea[0].outerHTML
+  if @textarea.length > 0
+    textarea = @textarea[0].outerHTML
+  else return
+  console.log "textarea exists"
   container = '<div class="tmeditor" id="'+@uniqueID()+'">
   '+skin+'
   <div class="tm-editor">

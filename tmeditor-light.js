@@ -107,7 +107,12 @@
     var buttons, container, i, results, skin, textarea;
     skin = this.params.skin || this.Template;
     skin = skin.replace(/{{tm-title}}/g, this.title);
-    textarea = this.textarea[0].outerHTML;
+    if (this.textarea.length > 0) {
+      textarea = this.textarea[0].outerHTML;
+    } else {
+      return;
+    }
+    console.log("textarea exists");
     container = '<div class="tmeditor" id="' + this.uniqueID() + '">' + skin + '<div class="tm-editor">' + textarea + '</div> </div>';
     this.textarea.replaceWith(container);
     buttons = $('[data-action="tm-dropdown"]');
