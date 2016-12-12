@@ -107,12 +107,13 @@
     var buttons, container, i, results, skin, textarea;
     skin = this.params.skin || this.Template;
     skin = skin.replace(/{{tm-title}}/g, this.title);
-    if (this.textarea.length > 0) {
+    try {
       textarea = this.textarea[0].outerHTML;
-    } else {
+      console.info('[TMEditor]: Script running with success. Excellent!');
+    } catch (error) {
+      console.error('[TMEditor]: Textarea with selector "' + this.params.selector + '" not found. Script stopped. Bad...');
       return;
     }
-    console.log("textarea exists");
     container = '<div class="tmeditor" id="' + this.uniqueID() + '">' + skin + '<div class="tm-editor">' + textarea + '</div> </div>';
     this.textarea.replaceWith(container);
     buttons = $('[data-action="tm-dropdown"]');
