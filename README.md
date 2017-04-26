@@ -1,9 +1,9 @@
 # TMEditor 2.0 <b>L</b>
 The aweasome simple jquery based editor
 
-####GET STARTED
+#### GET STARTED
 
-#####Initialize
+##### Initialize
 
     <!-- Load skin css -->
     <link href="/path/to/tmeditor-light.min.css" rel="stylesheet" type="text/css">
@@ -21,7 +21,7 @@ The aweasome simple jquery based editor
       });
     </script>
     
-#####Initialize CoffeeScript
+##### Initialize CoffeeScript
  
     TMELight.init {
       selector: ".tmeditor-area" # Set selector
