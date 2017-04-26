@@ -33,5 +33,5 @@ The aweasome simple jquery based editor
 <br>
 Want to help with the development? Contact me <b>yura&#64;n3sty.com</b>
 
-Try a [DEMO](https://n3sty.github.io/tmeditor-light/)<br>
+Try a [DEMO](https://gh.n3sty.com/tmeditor-light/)<br>
 The editor distributed under [MIT](http://www.n3sty.com/mit.html) license
