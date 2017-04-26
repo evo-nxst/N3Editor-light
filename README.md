@@ -1,6 +1,5 @@
 # TMEditor 2.0 <b>L</b>
 The aweasome simple jquery based editor
-Editor wysiwyg version is [here](https://github.com/N3stY/TMEditor)
 
 ####GET STARTED
 
