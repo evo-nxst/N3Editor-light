@@ -31,9 +31,7 @@ The aweasome simple jquery based editor
         plugins: 'weight code font-size color quote align-left align-center align-right image link' # Load plugins (separated with space)
     }
 <br>
-<b>You can create your own style</b> using as sample <b>[tmeditor-light.less](https://github.com/N3stY/TMEditor-light/blob/master/less/tmeditor-light.less)</b> and <b>[default.template.coffee](https://github.com/N3stY/TMEditor-light/blob/master/coffee/default.template.coffee)</b> / <b>[default.template.js](https://github.com/N3stY/TMEditor-light/blob/master/default.template.js)</b>
-<br>
-Want to help with the development? Contact me <b>yura&#64;n3sty.com</b>
+<b>You can create your own style</b> using as sample <b>[n3editor-light.less](https://github.com/N3stY/N3Editor-light/blob/master/less/n3editor-light.less)</b> and <b>[default.template.coffee](https://github.com/N3stY/N3Editor-light/blob/master/coffee/default.template.coffee)</b> / <b>[default.template.js](https://github.com/N3stY/N3Editor-light/blob/master/default.template.js)</b>
 
 Try a [DEMO](https://gh.n3sty.com/n3editor-light/)<br>
 The editor distributed under <b>MIT</b> license
