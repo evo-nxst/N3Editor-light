@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "link.js",
+  "sourceRoot": "",
+  "sources": [
+    "..\\coffee\\plugins\\link.coffee"
+  ],
+  "names": [],
+  "mappings": "AAEA;EAAA,IAAG,OAAO,QAAP,KAAmB,WAAtB;IACE,OAAO,CAAC,KAAR,CAAe,wFAAf;AACA,WAFF;;;EAIA,SAAS,CAAC,IAAV,CAAe,uXAAf;;EAOA,MAAM,CAAC,IAAP,GAAc,SAAC,QAAD;AACV,QAAA;IAAA,OAAA,GAAU;IACV,IAAA,GAAO,MAAM,CAAC,MAAP,CAAc,aAAd,EAA6B,SAA7B;IACP,IAAG,IAAH;MACE,OAAA,GAAU,WAAA,GAAY,IAAZ,GAAiB,IAAjB,GAAsB,QAAtB,GAA+B,OAD3C;;AAEA,WAAO;EALG;AAXd"
+}

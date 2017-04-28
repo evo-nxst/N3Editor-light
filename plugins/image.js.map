@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "image.js",
+  "sourceRoot": "",
+  "sources": [
+    "..\\coffee\\plugins\\image.coffee"
+  ],
+  "names": [],
+  "mappings": "AAEA;EAAA,IAAG,OAAO,QAAP,KAAmB,WAAtB;IACE,OAAO,CAAC,KAAR,CAAe,wFAAf;AACA,WAFF;;;EAIA,SAAS,CAAC,IAAV,CAAe,6RAAf;;EAOA,MAAM,CAAC,KAAP,GAAe,SAAC,QAAD;AACX,QAAA;IAAA,OAAA,GAAU;IACV,IAAA,GAAO,MAAM,CAAC,MAAP,CAAc,mBAAd,EAAmC,SAAnC;IACP,IAAG,IAAH;MACE,OAAA,GAAU,YAAA,GAAa,IAAb,GAAkB,IAAlB,GAAuB,SADnC;;AAEA,WAAO;EALI;AAXf"
+}

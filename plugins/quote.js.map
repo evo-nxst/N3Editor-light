@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "quote.js",
+  "sourceRoot": "",
+  "sources": [
+    "..\\coffee\\plugins\\quote.coffee"
+  ],
+  "names": [],
+  "mappings": "AAEA;EAAA,IAAG,OAAO,QAAP,KAAmB,WAAtB;IACE,OAAO,CAAC,KAAR,CAAe,wFAAf;AACA,WAFF;;;EAIA,SAAS,CAAC,IAAV,CAAe,kNAAf;;EAOA,MAAM,CAAC,UAAP,GAAoB,SAAC,QAAD;AAChB,WAAO,cAAA,GAAe,QAAf,GAAwB;EADf;AAXpB"
+}

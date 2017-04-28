@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "align-center.js",
+  "sourceRoot": "",
+  "sources": [
+    "..\\coffee\\plugins\\align-center.coffee"
+  ],
+  "names": [],
+  "mappings": "AAEA;EAAA,IAAG,OAAO,QAAP,KAAmB,WAAtB;IACE,OAAO,CAAC,KAAR,CAAe,wFAAf;AACA,WAFF;;;EAIA,SAAS,CAAC,IAAV,CAAe,gPAAf;AAJA"
+}

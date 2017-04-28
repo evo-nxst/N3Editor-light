@@ -1,22 +1,22 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>TMEditor</title>
+  <title>N3Editor</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="assets/favicon.png" rel="shortcut icon" type="image/x-icon" />
   <link href="assets/demo.min.css" rel="stylesheet" type="text/css">
-  <link href="tmeditor-light.min.css" rel="stylesheet" type="text/css">
+  <link href="n3editor-light.min.css" rel="stylesheet" type="text/css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/github.min.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
   <div class="page">
     <header>
-      <a href="https://github.com/N3stY/TMEditor-light" class="button">Source</a>
-      <a href="https://github.com/N3stY/TMEditor-light/archive/master.zip" class="button filled">Download</a>
+      <a href="https://github.com/N3stY/n3editor-light" class="button">Source</a>
+      <a href="https://github.com/N3stY/n3editor-light/archive/master.zip" class="button filled">Download</a>
     </header>
     <div class="main-container">
-      <div><textarea name="tmarea" class="tmeditor-area">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea></div>
+      <div><textarea name="n3area" class="n3editor-area">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea></div>
     </div>
     <div class="filter"></div>
     <video autoplay loop poster="https://n3sty.github.io/resources/Love-Coding.jpg">
@@ -36,18 +36,19 @@
       <pre>
         <code class="html">
 &lt;!-- Load skin css --&gt;
-&lt;link href="/path/to/tmeditor-light.min.css" rel="stylesheet" type="text/css"&gt;
+&lt;link href="/path/to/n3editor-light.min.css" rel="stylesheet" type="text/css"&gt;
 
 &lt;!-- Load main script --&gt;
-&lt;script type="text/javascript" src="/path/to/tmeditor-light.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="/path/to/n3editor-light.js"&gt;&lt;/script&gt;
 &lt;!-- Load skin script --&gt;
 &lt;script type="text/javascript" src="/path/to/default.template.js"&gt;&lt;/script&gt;
 
 &lt;script type="text/javascript"&gt;
-  TMELight.init({
-    selector: ".tmeditor-area", // Set selector
-    skin: tm_default_template, // Load skin if not default
-    title: "Custom title" // Customize title in header
+  N3ELight.init({
+    selector: ".n3editor-area", // Set selector
+    skin: n3_default_template, // Load skin if not default
+    title: "Custom title", // Customize title in header
+    plugins: 'weight code font-size color quote align-left align-center align-right image link' // Load plugins (separated with space)
   });
 &lt;/script&gt;
         </code>
@@ -55,19 +56,20 @@
       <div class="title">Initialize CoffeeScript</div>
       <pre>
         <code class="coffee">
-TMELight.init {
-  selector: ".tmeditor-area" # Set selector
-  skin: tm_default_template # Load skin if not default
+N3ELight.init {
+  selector: ".n3editor-area" # Set selector
+  skin: n3_default_template # Load skin if not default
   title: "Custom title" # Customize title in header
+  plugins: 'weight code font-size color quote align-left align-center align-right image link' # Load plugins (separated with space)
 }
         </code>
       </pre>
     </div>
   </div>
-  <footer>TMEditor Light &copy;2016. Developed & designed by <a href="http://www.n3sty.com" target="_blank">N3stY</a></footer>
+  <footer>N3Editor Light &copy;2016. Developed & designed by <a href="http://www.n3sty.com" target="_blank">N3stY</a></footer>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
-  <script type="text/javascript" src="tmeditor-light.js"></script>
+  <script type="text/javascript" src="n3editor-light.js"></script>
   <script type="text/javascript" src="default.template.js"></script>
   <script type="text/javascript" src="assets/main.js"></script>
   <script type="text/javascript">

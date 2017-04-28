@@ -13,27 +13,28 @@
   <div class="main-container">
     <div>
 
-      <div class="tmeditor" style="width: 900px;">
+      <div class="n3editor" style="width: 900px;">
         <header>
-          <div class="tm-icon">Tm</div>
-          <div class="tm-title">Banshee Studio</div>
+          <div class="n3-icon">N3</div>
+          <div class="n3-title">Developing</div>
         </header>
-        <div class="tm-toolbar">
-          <div class="tm-group" data-action="tm-dropdown">
+        <div class="n3-toolbar">
+          <div class="n3-tool" data-action="n3-dropdown">
             <span>Weight</span>
             <a><span style="font-weight:400" data="regular">Regular</span><icon>keyboard_arrow_down</icon></a>
-            <div class="tm-dropdown-container" id="tm-weight">
+            <div class="n3-dropdown-container" id="n3-weight">
               <a data-weight="200"><span style="font-weight:200" data="ultra-light">Ultra Light</span></a>
-              <a data-weight="400" class="tm-selected"><span style="font-weight:400" data="regular">Regular</span></a>
+              <a data-weight="400"><span style="font-weight:400" data="regular">Regular</span></a>
               <a data-weight="500"><span style="font-weight:500" data="medium">Medium</span></a>
               <a data-weight="700"><span style="font-weight:700" data="bold">Bold</span></a>
               <a data-weight="900"><span style="font-weight:900" data="black">Black</span></a>
             </div>
           </div>
-          <div class="tm-group" data-action="tm-dropdown">
+          <div class="n3-separator"></div>
+          <div class="n3-tool" data-action="n3-dropdown">
             <span>Code</span>
             <a><span style="font-weight:400" data="javascript">JavaScript</span><icon>keyboard_arrow_down</icon></a>
-            <div class="tm-dropdown-container">
+            <div class="n3-dropdown-container">
               <a data-lang="code">Code</a>
               <a data-lang="javascript">JavaScript</a>
               <a data-lang="html">HTML</a>
@@ -78,14 +79,15 @@
               <a data-lang="vala">Vala</a>
             </div>
           </div>
-          <div class="tm-group">
-            <div data-action="tm-dropdown" target="tm-size">
+          <div class="n3-separator"></div>
+          <div class="n3-tool">
+            <div data-action="n3-dropdown" target="n3-size">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M2.5 4v3h5v12h3V7h5V4h-13zm19 5h-9v3h3v7h3v-7h3V9z"/></svg>
-              <div class="tm-dropdown-container">
+              <div class="n3-dropdown-container">
                 <a data-size="11">11px</a>
                 <a data-size="12">12px</a>
                 <a data-size="13">13px</a>
-                <a data-size="14" class="tm-selected">14px</a>
+                <a data-size="14">14px</a>
                 <a data-size="15">15px</a>
                 <a data-size="16">16px</a>
                 <a data-size="17">17px</a>
@@ -146,9 +148,11 @@
                 <a data-size="72">72px</a>
               </div>
             </div>
-            <div data-action="tm-dropdown">
+          </div>
+          <div class="n3-tool">
+            <div data-action="n3-dropdown">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill-opacity=".36" d="M0 20h24v4H0z"/><path d="M11 3L5.5 17h2.25l1.12-3h6.25l1.12 3h2.25L13 3h-2zm-1.38 9L12 5.67 14.38 12H9.62z"/></svg>
-              <div class="tm-dropdown-container">
+              <div class="n3-dropdown-container">
                 <div class="colors">
                   <a data-color="#f44336" style="background:#f44336"></a>
                   <a data-color="#e91e63" style="background:#e91e63"></a>
@@ -171,27 +175,39 @@
                 </div>
               </div>
             </div>
-            <div data-action="tm-dropdown">
+          </div>
+          <div class="n3-tool">
+            <div data-insert="blockquote">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/></svg>
             </div>
-            <div data-action="tm-dropdown">
+          </div>
+          <div class="n3-tool">
+            <div data-align="left">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15 15H3v2h12v-2zm0-8H3v2h12V7zM3 13h18v-2H3v2zm0 8h18v-2H3v2zM3 3v2h18V3H3z"/></svg>
             </div>
-            <div data-action="tm-dropdown">
+          </div>
+          <div class="n3-tool">
+            <div data-align="center">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7 15v2h10v-2H7zm-4 6h18v-2H3v2zm0-8h18v-2H3v2zm4-6v2h10V7H7zM3 3v2h18V3H3z"/></svg>
             </div>
-            <div data-action="tm-dropdown">
+          </div>
+          <div class="n3-tool">
+            <div data-align="right">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 21h18v-2H3v2zm6-4h12v-2H9v2zm-6-4h18v-2H3v2zm6-4h12V7H9v2zM3 3v2h18V3H3z"/></svg>
             </div>
-            <div data-action="tm-dropdown">
+          </div>
+          <div class="n3-tool">
+            <div data-insert="image">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
             </div>
-            <div data-action="tm-dropdown">
+          </div>
+          <div class="n3-tool">
+            <div data-insert="link">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
             </div>
           </div>
         </div>
-        <div class="tm-editor">
+        <div class="n3-editor">
           <textarea name="tmarea" id="tmeditor-area"></textarea>
         </div>
       </div>

@@ -1,4 +1,4 @@
-// out: ../tmeditor-light.min.css, sourcemap: false, compress: true
+// out: ../n3editor-light.min.css, sourcemap: false, compress: true
 @import "https://fonts.googleapis.com/css?family=Material+Icons|family=Roboto";
 @import "settings.less";
 @theme: #556d76;
@@ -6,7 +6,7 @@
 @secondary: #777b7c;
 @border: #efefef;
 
-.tmeditor {
+.n3editor {
   display: inline-block;
   overflow: hidden;
   border-radius: 4px;
@@ -22,7 +22,7 @@
     background: #fff;
     cursor: default;
     .noselect();
-    .tm-icon {
+    .n3-icon {
       border: solid 1px #aeacad;
       float: left;
       height: 30px;
@@ -34,7 +34,7 @@
       box-sizing: border-box;
       border-radius: 4px;
     }
-    .tm-title {
+    .n3-title {
       height: 30px;
       line-height: 28px;
       font-size: 16px;
@@ -43,15 +43,15 @@
       float: left;
     }
   }
-  [data-action="tm-dropdown"] {
+  [data-action="n3-dropdown"] {
     &.open {
-      .tm-dropdown-container {
+      .n3-dropdown-container {
         min-height: 100px;
         height: auto;
       }
     }
   }
-  .tm-toolbar {
+  .n3-toolbar {
     background: #fbfbfb;
     min-height: 45px;
     border-bottom: solid 1px @border;
@@ -61,23 +61,28 @@
       content: " ";
       clear: both;
     }
-    > .tm-group {
+    > .n3-separator {
+      width: 1px;
+      background: @border;
+      height: 45px;
+      float: left;
+    }
+    > .n3-tool {
       height: 45px;
       box-sizing: border-box;
-      padding: 0 7.5px;
-      border-right: solid 1px @border;
       font-size: 14px;
       line-height: 45px;
       float: left;
       position: relative;
-      &:last-child {
-        border-right: none;
-      }
       > span {
+        margin-left: 7.5px;
         margin-right: 5px;
         font-weight: 900;
       }
-      > a, > div:not(.tm-dropdown-container) {
+      > a {
+        margin-right: 7.5px;
+      }
+      > a, div:not(.n3-dropdown-container) {
         cursor: pointer;
         .noselect();
         color: #000;
@@ -88,9 +93,12 @@
         icon {
           height: 45px;
           line-height: 49px;
-          width: 45px;
+          width: 26px;
           text-align: center;
           float: right;
+        }
+        &.n3-dropdown {
+          margin: 0 -7.5px;
         }
       }
     }
@@ -112,9 +120,9 @@
       }
     }
   }
-  .tm-editor {
+  .n3-editor {
     background: #fff;
-    height: 300px;
+    height: 170px;
     position: relative;
     z-index: 1;
     padding: 24px 0;
@@ -131,10 +139,10 @@
       resize: none;
     }
   }
-  .tm-dropdown-container {
+  .n3-dropdown-container {
     position: absolute;
     height: 0;
-    max-height: 290px;
+    max-height: 210px;
     background: #fff;
     top: 45px;
     left: 5px;
@@ -161,7 +169,7 @@
         content: " ";
         border-radius: 50%;
       }
-      &.tm-selected::before {
+      &.n3-selected::before {
         background: #ffa8a8;
       }
       &:hover {
