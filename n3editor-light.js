@@ -44,7 +44,7 @@
 
   N3ELight.prototype.init = function(params) {
     var build, version;
-    this.version = version = "3.0 L BETA";
+    this.version = version = "3.0 L";
     this.build = build = "5";
     this.params = params;
     this.textarea = $(params.selector);

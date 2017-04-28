@@ -33,7 +33,7 @@ N3ELight::Template = '
   <div class="n3-toolbar"></div>'
 
 N3ELight::init = (params) ->
-  @version = version = "3.0 L BETA"
+  @version = version = "3.0 L"
   @build = build = "5"
   @params = params
   @textarea = $(params.selector)
