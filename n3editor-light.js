@@ -44,8 +44,8 @@
 
   N3ELight.prototype.init = function(params) {
     var build, version;
-    this.version = version = "3.0 L";
-    this.build = build = "5";
+    this.version = version = "3.0.1 L";
+    this.build = build = "2";
     this.params = params;
     this.textarea = $(params.selector);
     this.title = params.title || "N3Editor " + version;
@@ -100,7 +100,7 @@
   };
 
   N3ELight.prototype.loadPlugins = function(params) {
-    var l, m, p, path, plugins, tb, url;
+    var p, path, plugins, tb, url;
     path = $('body').find('script');
     p = false;
     $('script').each(function(index, value) {
@@ -111,22 +111,16 @@
         return p = src;
       }
     });
-    l = location.href;
-    m = l.match(/[^\/]+\.html/i);
-    if (m === null) {
-      m = Array();
-      m[0] = '';
-    }
-    url = l.replace(m[0], '');
-    this.path = p;
-    plugins = p + "plugins/";
+    url = window.location.href.split('/');
+    url = url[0] + "//" + url[2];
+    this.path = p = p.replace(url, '');
+    plugins = url + p + "plugins/";
     if (params.plugins === void 0 || params.plugins === '') {
       params.plugins = 'weight code font-size color quote align-left align-center align-right image link';
     }
     tb = params.plugins;
     tb = tb.split(' ');
     return tb.forEach(function(name, i, arr) {
-      console.log(plugins + name + '.js');
       include(plugins + name + '.js');
     });
   };

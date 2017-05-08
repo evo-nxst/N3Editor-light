@@ -33,8 +33,8 @@ N3ELight::Template = '
   <div class="n3-toolbar"></div>'
 
 N3ELight::init = (params) ->
-  @version = version = "3.0 L"
-  @build = build = "5"
+  @version = version = "3.0.1 L"
+  @build = build = "2"
   @params = params
   @textarea = $(params.selector)
   @title = params.title || "N3Editor "+version
@@ -97,31 +97,26 @@ N3ELight::setUI = ->
 N3ELight::loadPlugins = (params) ->
   path = $('body').find 'script'
   p = false
-  $.each path, (index, value) ->
-    src = $(value).attr 'src'
+  $('script').each (index, value) ->
+    src = value.src
     if src.match(/n3editor-light/i)
       src = src.replace 'n3editor-light.js', ''
       p = src
 
-  l = location.href
-  m = l.match /[^/]+\.html/i
-  if m == null
-    m = Array()
-    m[0] = ''
-  url = l.replace m[0], ''
+  url = window.location.href.split '/'
+  url = url[0] + "//" + url[2]
 
-  @path = p
-  plugins = url+p+"/plugins/"
+  @path = p = p.replace url, ''
+  plugins = url+p+"plugins/"
 
   if params.plugins == undefined || params.plugins == ''
     params.plugins = 'weight code font-size color quote align-left align-center align-right image link'
 
-  if params.plugins != undefined && params.plugins != ''
-    tb = params.plugins
-    tb = tb.split ' '
-    tb.forEach (name, i, arr) ->
-      include plugins+name+'.js'
-      return
+  tb = params.plugins
+  tb = tb.split ' '
+  tb.forEach (name, i, arr) ->
+    include plugins+name+'.js'
+    return
 
 
 N3ELight::iniToolbar = ->
