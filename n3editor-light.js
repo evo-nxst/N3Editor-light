@@ -103,9 +103,9 @@
     var l, m, p, path, plugins, tb, url;
     path = $('body').find('script');
     p = false;
-    $.each(path, function(index, value) {
+    $('script').each(function(index, value) {
       var src;
-      src = $(value).attr('src');
+      src = value.src;
       if (src.match(/n3editor-light/i)) {
         src = src.replace('n3editor-light.js', '');
         return p = src;
@@ -119,17 +119,16 @@
     }
     url = l.replace(m[0], '');
     this.path = p;
-    plugins = url + p + "/plugins/";
+    plugins = p + "plugins/";
     if (params.plugins === void 0 || params.plugins === '') {
       params.plugins = 'weight code font-size color quote align-left align-center align-right image link';
     }
-    if (params.plugins !== void 0 && params.plugins !== '') {
-      tb = params.plugins;
-      tb = tb.split(' ');
-      return tb.forEach(function(name, i, arr) {
-        include(plugins + name + '.js');
-      });
-    }
+    tb = params.plugins;
+    tb = tb.split(' ');
+    return tb.forEach(function(name, i, arr) {
+      console.log(plugins + name + '.js');
+      include(plugins + name + '.js');
+    });
   };
 
   N3ELight.prototype.iniToolbar = function() {
