@@ -33,5 +33,5 @@ The aweasome simple jquery based editor
 <br>
 <b>You can create your own style</b> using as sample <b>[n3editor-light.less](https://github.com/N3stY/N3Editor-light/blob/master/less/n3editor-light.less)</b> and <b>[default.template.coffee](https://github.com/N3stY/N3Editor-light/blob/master/coffee/default.template.coffee)</b> / <b>[default.template.js](https://github.com/N3stY/N3Editor-light/blob/master/default.template.js)</b>
 
-Try a [DEMO](https://gh.n3sty.com/n3editor-light/)<br>
+Try a [DEMO](http://evo-nxst.github.io/N3Editor-light/)<br>
 The editor distributed under <b>MIT</b> license
